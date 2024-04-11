@@ -11,7 +11,7 @@ export default function CustomEvent() {
       <h1>Showcasing custom event:</h1>
       <br />
       <button
-        data-custom-button="coolcoolcool"
+        className="data-custom-button"
         onClick={() => {
           setFingerPrint(randomInt());
         }}
