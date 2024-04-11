@@ -1,5 +1,4 @@
 "use client";
-import { sendGAEvent } from "@next/third-parties/google";
 import { login } from "../actions/login";
 
 export default function Login() {
