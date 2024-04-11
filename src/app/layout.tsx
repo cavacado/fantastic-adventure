@@ -17,6 +17,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      {process.env.GTM_MEASUREMENT_ID && (
+        <GoogleTagManager gtmId={process.env.GTM_MEASUREMENT_ID} />
+      )}
       <body
         className={inter.className}
         style={{
@@ -34,9 +37,6 @@ export default function RootLayout({
           <Link href="/">Back to Home</Link>
         </footer>
       </body>
-      {process.env.GTM_MEASUREMENT_ID && (
-        <GoogleTagManager gtmId={process.env.GTM_MEASUREMENT_ID} />
-      )}
     </html>
   );
 }
