@@ -13,9 +13,9 @@ export default function CustomEvent() {
       <button
         onClick={() => {
           setFingerPrint(randomInt());
-          sendGAEvent("event", "custom_event", {
-            value: "coolcoolcool",
-          });
+          // sendGAEvent("event", "custom_event", {
+          //   value: "coolcoolcool",
+          // });
         }}
       >
         send custom event
