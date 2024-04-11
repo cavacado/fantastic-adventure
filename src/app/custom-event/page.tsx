@@ -11,11 +11,9 @@ export default function CustomEvent() {
       <h1>Showcasing custom event:</h1>
       <br />
       <button
+        data-custom-button="coolcoolcool"
         onClick={() => {
           setFingerPrint(randomInt());
-          // sendGAEvent("event", "custom_event", {
-          //   value: "coolcoolcool",
-          // });
         }}
       >
         send custom event
