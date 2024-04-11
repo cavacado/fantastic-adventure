@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import { GoogleAnalytics } from "@next/third-parties/google";
+import { GoogleTagManager } from "@next/third-parties/google";
 import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -34,8 +34,8 @@ export default function RootLayout({
           <Link href="/">Back to Home</Link>
         </footer>
       </body>
-      {process.env.GA_MEASUREMENT_ID && (
-        <GoogleAnalytics gaId={process.env.GA_MEASUREMENT_ID} />
+      {process.env.GTM_MEASUREMENT_ID && (
+        <GoogleTagManager gtmId={process.env.GTM_MEASUREMENT_ID} />
       )}
     </html>
   );
