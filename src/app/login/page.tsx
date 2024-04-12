@@ -16,13 +16,7 @@ export default function Login() {
           <input type="password" name="password" id="password" required />
         </div>
         <div>
-          <input
-            type="submit"
-            value="Login"
-            // onClick={() => {
-            //   sendGAEvent("event", "login", { method: "cookie" });
-            // }}
-          />
+          <input type="submit" value="Login" data-login />
         </div>
       </form>
     </>
