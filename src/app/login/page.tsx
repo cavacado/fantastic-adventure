@@ -6,7 +6,7 @@ export default function Login() {
     <>
       <h1>Showcasing Recommended Events:</h1>
       <h1>Please Login to access application:</h1>
-      <form action={login}>
+      <form action={login} data-login>
         <div>
           <label htmlFor="email">Enter your email: </label>
           <input type="email" name="email" id="email" required />
@@ -16,7 +16,7 @@ export default function Login() {
           <input type="password" name="password" id="password" required />
         </div>
         <div>
-          <input type="submit" value="Login" data-login />
+          <input type="submit" value="Login" />
         </div>
       </form>
     </>
