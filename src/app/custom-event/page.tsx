@@ -6,7 +6,7 @@ export default function CustomEvent() {
     <>
       <h1>Showcasing custom event:</h1>
       <br />
-      <button data-custom-event="coolcoolcool">send custom event</button>
+      <button data-custom-event>send custom event</button>
       <br />
     </>
   );
