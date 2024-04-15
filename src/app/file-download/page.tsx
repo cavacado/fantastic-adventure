@@ -5,6 +5,7 @@ export default function FileDownload() {
       <a
         href={"https://filesamples.com/samples/document/txt/sample1.txt"}
         download
+        target="_blank"
       >
         Download
       </a>
